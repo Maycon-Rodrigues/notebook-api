@@ -1,0 +1,461 @@
+Started GET "/" for 127.0.0.1 at 2017-10-12 15:50:26 -0300
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-10-12 15:50:27 -0300
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateContacts (20171012184934)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "birthdate" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171012184934"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-12 18:50:57.081229"], ["updated_at", "2017-10-12 18:50:57.081229"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-10-12 15:51:09 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/maycon/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/maycon/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-10-12 15:51:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Grace Senger"], ["email", "harvey@swaniawskiheathcote.io"], ["birthdate", "1978-02-24"], ["created_at", "2017-10-12 18:58:57.728128"], ["updated_at", "2017-10-12 18:58:57.728128"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Claudine Wiza PhD"], ["email", "jacquelyn_schiller@collintamm.co"], ["birthdate", "1993-07-28"], ["created_at", "2017-10-12 18:58:57.741793"], ["updated_at", "2017-10-12 18:58:57.741793"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Minnie Fritsch"], ["email", "alanna@bernhard.co"], ["birthdate", "1994-01-09"], ["created_at", "2017-10-12 18:58:57.748012"], ["updated_at", "2017-10-12 18:58:57.748012"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Johnnie Simonis"], ["email", "alexane@schneider.info"], ["birthdate", "1999-08-21"], ["created_at", "2017-10-12 18:58:57.757935"], ["updated_at", "2017-10-12 18:58:57.757935"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Darby Crona"], ["email", "kariane@nikolaus.info"], ["birthdate", "1973-12-22"], ["created_at", "2017-10-12 18:58:57.762200"], ["updated_at", "2017-10-12 18:58:57.762200"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rebekah Baumbach"], ["email", "clifton@muller.net"], ["birthdate", "1980-08-30"], ["created_at", "2017-10-12 18:58:57.771755"], ["updated_at", "2017-10-12 18:58:57.771755"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vince Koch I"], ["email", "trisha@pfannerstill.info"], ["birthdate", "1979-05-02"], ["created_at", "2017-10-12 18:58:57.776321"], ["updated_at", "2017-10-12 18:58:57.776321"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nova O'Hara"], ["email", "patrick@pollichmayer.com"], ["birthdate", "1983-04-17"], ["created_at", "2017-10-12 18:58:57.781052"], ["updated_at", "2017-10-12 18:58:57.781052"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ashly Gottlieb"], ["email", "taylor_orn@wolf.co"], ["birthdate", "1986-07-24"], ["created_at", "2017-10-12 18:58:57.789485"], ["updated_at", "2017-10-12 18:58:57.789485"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Percy Mayert"], ["email", "dan@runtekirlin.info"], ["birthdate", "1984-09-22"], ["created_at", "2017-10-12 18:58:57.794640"], ["updated_at", "2017-10-12 18:58:57.794640"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lela Donnelly"], ["email", "marjorie@sawaynkonopelski.io"], ["birthdate", "1999-02-28"], ["created_at", "2017-10-12 18:58:57.799885"], ["updated_at", "2017-10-12 18:58:57.799885"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Miss Jarrett Gislason"], ["email", "dolly@koelpinpouros.net"], ["birthdate", "1986-03-09"], ["created_at", "2017-10-12 18:58:57.805172"], ["updated_at", "2017-10-12 18:58:57.805172"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Polly Kohler"], ["email", "jermey.buckridge@schneider.co"], ["birthdate", "1998-06-23"], ["created_at", "2017-10-12 18:58:57.811536"], ["updated_at", "2017-10-12 18:58:57.811536"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Cleora Weber"], ["email", "aurore.armstrong@wardrogahn.com"], ["birthdate", "1993-01-13"], ["created_at", "2017-10-12 18:58:57.820115"], ["updated_at", "2017-10-12 18:58:57.820115"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Georgianna Eichmann I"], ["email", "kim_nolan@reingerdietrich.name"], ["birthdate", "1973-08-09"], ["created_at", "2017-10-12 18:58:57.826720"], ["updated_at", "2017-10-12 18:58:57.826720"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Margarita Heathcote"], ["email", "leon.kuhn@dooley.com"], ["birthdate", "1976-09-07"], ["created_at", "2017-10-12 18:58:57.830540"], ["updated_at", "2017-10-12 18:58:57.830540"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Valerie Champlin"], ["email", "tracey_zemlak@vonrueden.io"], ["birthdate", "1982-11-08"], ["created_at", "2017-10-12 18:58:57.843580"], ["updated_at", "2017-10-12 18:58:57.843580"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lucius Predovic"], ["email", "denis_harvey@hodkiewicz.co"], ["birthdate", "1998-02-03"], ["created_at", "2017-10-12 18:58:57.849504"], ["updated_at", "2017-10-12 18:58:57.849504"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Gerardo Weber"], ["email", "olga_gerlach@lesch.io"], ["birthdate", "1984-01-26"], ["created_at", "2017-10-12 18:58:57.854977"], ["updated_at", "2017-10-12 18:58:57.854977"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Eriberto Hagenes"], ["email", "thora@connelly.name"], ["birthdate", "1977-01-12"], ["created_at", "2017-10-12 18:58:57.860598"], ["updated_at", "2017-10-12 18:58:57.860598"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rory Casper"], ["email", "jordan_stracke@kovacek.net"], ["birthdate", "1972-12-26"], ["created_at", "2017-10-12 18:58:57.865890"], ["updated_at", "2017-10-12 18:58:57.865890"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Eudora Daniel"], ["email", "isabell.casper@bailey.co"], ["birthdate", "1990-10-03"], ["created_at", "2017-10-12 18:58:57.873288"], ["updated_at", "2017-10-12 18:58:57.873288"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Allene Rutherford"], ["email", "korey_parisian@johnson.io"], ["birthdate", "1980-07-26"], ["created_at", "2017-10-12 18:58:57.878259"], ["updated_at", "2017-10-12 18:58:57.878259"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Isadore McKenzie DDS"], ["email", "maryse.balistreri@wilkinson.co"], ["birthdate", "1982-05-01"], ["created_at", "2017-10-12 18:58:57.884358"], ["updated_at", "2017-10-12 18:58:57.884358"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tyrel Heller"], ["email", "santina.boehm@zemlaklegros.org"], ["birthdate", "1983-12-18"], ["created_at", "2017-10-12 18:58:57.889651"], ["updated_at", "2017-10-12 18:58:57.889651"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hassan Bartoletti"], ["email", "adrianna_green@schneider.biz"], ["birthdate", "1991-11-10"], ["created_at", "2017-10-12 18:58:57.894019"], ["updated_at", "2017-10-12 18:58:57.894019"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jensen Mosciski"], ["email", "alberto@barrows.co"], ["birthdate", "1976-03-16"], ["created_at", "2017-10-12 18:58:57.898223"], ["updated_at", "2017-10-12 18:58:57.898223"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Niko Zulauf"], ["email", "buford.hauck@schamberger.io"], ["birthdate", "1995-04-04"], ["created_at", "2017-10-12 18:58:57.903839"], ["updated_at", "2017-10-12 18:58:57.903839"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Velda Ferry"], ["email", "ernest@hirthe.io"], ["birthdate", "1976-11-03"], ["created_at", "2017-10-12 18:58:57.909124"], ["updated_at", "2017-10-12 18:58:57.909124"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Judge Koepp"], ["email", "ethan_leuschke@turcotte.co"], ["birthdate", "1981-05-30"], ["created_at", "2017-10-12 18:58:57.920366"], ["updated_at", "2017-10-12 18:58:57.920366"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tia Becker"], ["email", "layla@kelerhammes.io"], ["birthdate", "1987-11-17"], ["created_at", "2017-10-12 18:58:57.924248"], ["updated_at", "2017-10-12 18:58:57.924248"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vickie Jacobson"], ["email", "demario@rath.io"], ["birthdate", "1996-10-04"], ["created_at", "2017-10-12 18:58:57.929828"], ["updated_at", "2017-10-12 18:58:57.929828"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Keely O'Connell"], ["email", "bridgette@zulauf.org"], ["birthdate", "1973-05-10"], ["created_at", "2017-10-12 18:58:57.936258"], ["updated_at", "2017-10-12 18:58:57.936258"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Sharon Predovic"], ["email", "alden@littel.io"], ["birthdate", "1987-12-22"], ["created_at", "2017-10-12 18:58:57.948601"], ["updated_at", "2017-10-12 18:58:57.948601"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Brando Kutch"], ["email", "roman_schaefer@bradtkemurazik.name"], ["birthdate", "1973-09-14"], ["created_at", "2017-10-12 18:58:57.956698"], ["updated_at", "2017-10-12 18:58:57.956698"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Pierce Durgan"], ["email", "kenyatta@bednarpollich.com"], ["birthdate", "1981-04-28"], ["created_at", "2017-10-12 18:58:57.961057"], ["updated_at", "2017-10-12 18:58:57.961057"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Violet Feil"], ["email", "trycia@hauckbosco.info"], ["birthdate", "1977-02-02"], ["created_at", "2017-10-12 18:58:57.966370"], ["updated_at", "2017-10-12 18:58:57.966370"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Marlene Farrell"], ["email", "chasity_zemlak@okuneva.net"], ["birthdate", "1981-02-04"], ["created_at", "2017-10-12 18:58:57.973988"], ["updated_at", "2017-10-12 18:58:57.973988"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sincere Huels III"], ["email", "eloy@bradtke.biz"], ["birthdate", "1997-12-22"], ["created_at", "2017-10-12 18:58:57.978363"], ["updated_at", "2017-10-12 18:58:57.978363"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ned Gislason"], ["email", "leann_erdman@bogan.io"], ["birthdate", "1975-04-02"], ["created_at", "2017-10-12 18:58:57.983538"], ["updated_at", "2017-10-12 18:58:57.983538"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Marjolaine Ferry"], ["email", "thomas_price@millshuels.biz"], ["birthdate", "1989-08-18"], ["created_at", "2017-10-12 18:58:57.989425"], ["updated_at", "2017-10-12 18:58:57.989425"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Morton Ziemann"], ["email", "emmett@vonrueden.co"], ["birthdate", "1991-06-05"], ["created_at", "2017-10-12 18:58:57.993470"], ["updated_at", "2017-10-12 18:58:57.993470"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Abigale Jerde"], ["email", "emerson@langoshkemmer.co"], ["birthdate", "1981-07-15"], ["created_at", "2017-10-12 18:58:57.998934"], ["updated_at", "2017-10-12 18:58:57.998934"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mrs. Belle Deckow"], ["email", "santina@mohrgrimes.com"], ["birthdate", "1984-10-13"], ["created_at", "2017-10-12 18:58:58.004631"], ["updated_at", "2017-10-12 18:58:58.004631"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Edgar Goodwin"], ["email", "tiana.crist@bergstrom.com"], ["birthdate", "1986-08-31"], ["created_at", "2017-10-12 18:58:58.009172"], ["updated_at", "2017-10-12 18:58:58.009172"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cedrick Stracke"], ["email", "vicenta_labadie@parisian.io"], ["birthdate", "1999-01-02"], ["created_at", "2017-10-12 18:58:58.016407"], ["updated_at", "2017-10-12 18:58:58.016407"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Isabelle Wilderman"], ["email", "ryder_haley@gottlieb.net"], ["birthdate", "1979-04-05"], ["created_at", "2017-10-12 18:58:58.023070"], ["updated_at", "2017-10-12 18:58:58.023070"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Margarette DuBuque"], ["email", "finn@vonhintz.biz"], ["birthdate", "1989-05-16"], ["created_at", "2017-10-12 18:58:58.028241"], ["updated_at", "2017-10-12 18:58:58.028241"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Velva Dibbert"], ["email", "chelsey.rau@stammwyman.co"], ["birthdate", "1979-12-29"], ["created_at", "2017-10-12 18:58:58.035285"], ["updated_at", "2017-10-12 18:58:58.035285"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dashawn Kiehn"], ["email", "nash_fay@haag.com"], ["birthdate", "1987-07-20"], ["created_at", "2017-10-12 18:58:58.040461"], ["updated_at", "2017-10-12 18:58:58.040461"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dudley McKenzie"], ["email", "abraham_maggio@lindbartoletti.info"], ["birthdate", "1999-07-07"], ["created_at", "2017-10-12 18:58:58.044901"], ["updated_at", "2017-10-12 18:58:58.044901"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dakota Effertz"], ["email", "michaela@okon.io"], ["birthdate", "1977-03-31"], ["created_at", "2017-10-12 18:58:58.050429"], ["updated_at", "2017-10-12 18:58:58.050429"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Asha Smitham DDS"], ["email", "shayne@beerstanton.org"], ["birthdate", "1995-12-11"], ["created_at", "2017-10-12 18:58:58.059362"], ["updated_at", "2017-10-12 18:58:58.059362"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Myron Reilly"], ["email", "alf.bogisich@leschroberts.name"], ["birthdate", "1989-07-30"], ["created_at", "2017-10-12 18:58:58.064419"], ["updated_at", "2017-10-12 18:58:58.064419"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Miss Ardith Jaskolski"], ["email", "woodrow_wilderman@bashirianschmitt.biz"], ["birthdate", "1992-09-19"], ["created_at", "2017-10-12 18:58:58.071969"], ["updated_at", "2017-10-12 18:58:58.071969"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Destini Effertz"], ["email", "arnulfo.brekke@hartmannstark.net"], ["birthdate", "1998-11-23"], ["created_at", "2017-10-12 18:58:58.078055"], ["updated_at", "2017-10-12 18:58:58.078055"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tillman Monahan"], ["email", "tristin@doyle.org"], ["birthdate", "1974-11-15"], ["created_at", "2017-10-12 18:58:58.081830"], ["updated_at", "2017-10-12 18:58:58.081830"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ora Vandervort"], ["email", "layne@carterkertzmann.org"], ["birthdate", "1994-06-15"], ["created_at", "2017-10-12 18:58:58.089097"], ["updated_at", "2017-10-12 18:58:58.089097"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Rod Gibson"], ["email", "toney.kovacek@mckenziekihn.info"], ["birthdate", "1977-05-28"], ["created_at", "2017-10-12 18:58:58.093521"], ["updated_at", "2017-10-12 18:58:58.093521"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Liana Strosin"], ["email", "arielle.kilback@mckenzie.co"], ["birthdate", "1984-02-11"], ["created_at", "2017-10-12 18:58:58.097633"], ["updated_at", "2017-10-12 18:58:58.097633"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Delbert Robel"], ["email", "letha@champlin.name"], ["birthdate", "1983-06-25"], ["created_at", "2017-10-12 18:58:58.103198"], ["updated_at", "2017-10-12 18:58:58.103198"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Woodrow Jacobson"], ["email", "moshe.haley@dickibartell.org"], ["birthdate", "1983-05-23"], ["created_at", "2017-10-12 18:58:58.107458"], ["updated_at", "2017-10-12 18:58:58.107458"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Abdullah Kub"], ["email", "jaquan.pfeffer@corwin.net"], ["birthdate", "1980-03-29"], ["created_at", "2017-10-12 18:58:58.111902"], ["updated_at", "2017-10-12 18:58:58.111902"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Graham Murray IV"], ["email", "jaylen@gutmann.name"], ["birthdate", "1978-11-06"], ["created_at", "2017-10-12 18:58:58.119010"], ["updated_at", "2017-10-12 18:58:58.119010"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tabitha Hegmann PhD"], ["email", "sonya@denesik.co"], ["birthdate", "1978-05-17"], ["created_at", "2017-10-12 18:58:58.124766"], ["updated_at", "2017-10-12 18:58:58.124766"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vaughn Schuster MD"], ["email", "gunnar@dibbert.co"], ["birthdate", "1987-09-26"], ["created_at", "2017-10-12 18:58:58.129083"], ["updated_at", "2017-10-12 18:58:58.129083"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Roma Kling"], ["email", "lucio.von@spencerlemke.biz"], ["birthdate", "1992-10-27"], ["created_at", "2017-10-12 18:58:58.134434"], ["updated_at", "2017-10-12 18:58:58.134434"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tessie Witting"], ["email", "carey@schumm.biz"], ["birthdate", "1979-02-01"], ["created_at", "2017-10-12 18:58:58.141569"], ["updated_at", "2017-10-12 18:58:58.141569"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sarina Heidenreich"], ["email", "vivian@buckridgeebert.co"], ["birthdate", "1973-12-24"], ["created_at", "2017-10-12 18:58:58.145658"], ["updated_at", "2017-10-12 18:58:58.145658"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mrs. Tia Littel"], ["email", "camilla.goodwin@abernathy.net"], ["birthdate", "1984-04-24"], ["created_at", "2017-10-12 18:58:58.151266"], ["updated_at", "2017-10-12 18:58:58.151266"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alfonzo Conroy"], ["email", "gladyce_herzog@tillmancorwin.biz"], ["birthdate", "1972-12-27"], ["created_at", "2017-10-12 18:58:58.157432"], ["updated_at", "2017-10-12 18:58:58.157432"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Corene Yost"], ["email", "tony@watsicamurphy.name"], ["birthdate", "1987-01-07"], ["created_at", "2017-10-12 18:58:58.163230"], ["updated_at", "2017-10-12 18:58:58.163230"]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Pattie Dooley Jr."], ["email", "dena@tremblay.co"], ["birthdate", "1992-10-27"], ["created_at", "2017-10-12 18:58:58.173146"], ["updated_at", "2017-10-12 18:58:58.173146"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Daren Ryan"], ["email", "colten.borer@bogisich.com"], ["birthdate", "1994-11-23"], ["created_at", "2017-10-12 18:58:58.179904"], ["updated_at", "2017-10-12 18:58:58.179904"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Lynn VonRueden"], ["email", "ru.dare@price.io"], ["birthdate", "1979-10-14"], ["created_at", "2017-10-12 18:58:58.188348"], ["updated_at", "2017-10-12 18:58:58.188348"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ressie Langosh"], ["email", "abigale.mertz@veum.biz"], ["birthdate", "1976-10-26"], ["created_at", "2017-10-12 18:58:58.194883"], ["updated_at", "2017-10-12 18:58:58.194883"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Leatha Wunsch"], ["email", "caterina@whitebernhard.net"], ["birthdate", "1985-08-11"], ["created_at", "2017-10-12 18:58:58.201246"], ["updated_at", "2017-10-12 18:58:58.201246"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rogers Carroll Jr."], ["email", "ned_gleason@hamill.name"], ["birthdate", "1988-02-04"], ["created_at", "2017-10-12 18:58:58.208824"], ["updated_at", "2017-10-12 18:58:58.208824"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lance Funk"], ["email", "elyse_kunde@okuneva.info"], ["birthdate", "1975-05-11"], ["created_at", "2017-10-12 18:58:58.217234"], ["updated_at", "2017-10-12 18:58:58.217234"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Laverne Willms IV"], ["email", "derek@heidenreich.co"], ["birthdate", "1981-04-06"], ["created_at", "2017-10-12 18:58:58.223347"], ["updated_at", "2017-10-12 18:58:58.223347"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dr. Percival Sipes"], ["email", "alberto@okon.name"], ["birthdate", "1993-02-02"], ["created_at", "2017-10-12 18:58:58.228885"], ["updated_at", "2017-10-12 18:58:58.228885"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ms. Jaime Toy"], ["email", "julia.adams@rosenbaumvon.info"], ["birthdate", "1983-01-12"], ["created_at", "2017-10-12 18:58:58.236157"], ["updated_at", "2017-10-12 18:58:58.236157"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hellen Feeney"], ["email", "charlene.emmerich@langosh.biz"], ["birthdate", "1989-04-12"], ["created_at", "2017-10-12 18:58:58.241347"], ["updated_at", "2017-10-12 18:58:58.241347"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mr. Makenna Kertzmann"], ["email", "georgette@gleichner.io"], ["birthdate", "1973-03-06"], ["created_at", "2017-10-12 18:58:58.245625"], ["updated_at", "2017-10-12 18:58:58.245625"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Clay Goyette"], ["email", "shawn.murray@christiansenschultz.com"], ["birthdate", "1991-11-06"], ["created_at", "2017-10-12 18:58:58.249548"], ["updated_at", "2017-10-12 18:58:58.249548"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alec Grady"], ["email", "antonina@hauck.name"], ["birthdate", "1986-04-06"], ["created_at", "2017-10-12 18:58:58.255216"], ["updated_at", "2017-10-12 18:58:58.255216"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dylan Connelly"], ["email", "javon@lueilwitz.com"], ["birthdate", "1985-03-03"], ["created_at", "2017-10-12 18:58:58.260485"], ["updated_at", "2017-10-12 18:58:58.260485"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Shaina Pollich"], ["email", "lorenza@walter.com"], ["birthdate", "1974-02-06"], ["created_at", "2017-10-12 18:58:58.269008"], ["updated_at", "2017-10-12 18:58:58.269008"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Olaf Romaguera"], ["email", "brando_adams@shields.org"], ["birthdate", "1985-11-19"], ["created_at", "2017-10-12 18:58:58.274227"], ["updated_at", "2017-10-12 18:58:58.274227"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mason Mraz"], ["email", "lina@wiegandleuschke.biz"], ["birthdate", "1990-08-14"], ["created_at", "2017-10-12 18:58:58.278932"], ["updated_at", "2017-10-12 18:58:58.278932"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Golden Rosenbaum"], ["email", "damien@oreilly.org"], ["birthdate", "1979-02-11"], ["created_at", "2017-10-12 18:58:58.282937"], ["updated_at", "2017-10-12 18:58:58.282937"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Drew Denesik"], ["email", "treie@marks.org"], ["birthdate", "1989-06-25"], ["created_at", "2017-10-12 18:58:58.288203"], ["updated_at", "2017-10-12 18:58:58.288203"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Zelda Lind"], ["email", "lina@hackettfritsch.com"], ["birthdate", "1973-08-16"], ["created_at", "2017-10-12 18:58:58.294990"], ["updated_at", "2017-10-12 18:58:58.294990"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Alexander Nitzsche"], ["email", "arnulfo@anderson.biz"], ["birthdate", "1998-07-12"], ["created_at", "2017-10-12 18:58:58.301086"], ["updated_at", "2017-10-12 18:58:58.301086"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Micaela Legros"], ["email", "jamie.kerluke@durganwhite.com"], ["birthdate", "1998-02-04"], ["created_at", "2017-10-12 18:58:58.305697"], ["updated_at", "2017-10-12 18:58:58.305697"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Karelle Beer MD"], ["email", "royal@torp.io"], ["birthdate", "1996-10-09"], ["created_at", "2017-10-12 18:58:58.312172"], ["updated_at", "2017-10-12 18:58:58.312172"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mrs. Ardith Feest"], ["email", "keaton.ebert@gleichner.info"], ["birthdate", "1985-06-28"], ["created_at", "2017-10-12 18:58:58.319748"], ["updated_at", "2017-10-12 18:58:58.319748"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Willy Boehm"], ["email", "braxton_hansen@jacobitowne.io"], ["birthdate", "1987-01-20"], ["created_at", "2017-10-12 18:58:58.324341"], ["updated_at", "2017-10-12 18:58:58.324341"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dorris Blick"], ["email", "elya.rolfson@mclaughlin.biz"], ["birthdate", "1998-09-10"], ["created_at", "2017-10-12 18:58:58.328575"], ["updated_at", "2017-10-12 18:58:58.328575"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sigurd Wisozk"], ["email", "christop@okeefe.name"], ["birthdate", "1987-12-10"], ["created_at", "2017-10-12 18:58:58.337104"], ["updated_at", "2017-10-12 18:58:58.337104"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-10-12 15:59:16 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/maycon/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/maycon/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2017-10-12 15:59:21 -0300
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.6ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+Completed 200 OK in 46ms (Views: 40.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2017-10-12 16:01:26 -0300
+Processing by ContactsController#index as */*
+  [1m[36mContact Load (0.6ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2017-10-12 16:08:10 -0300
+Processing by ContactsController#index as */*
+  [1m[36mContact Load (0.5ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contacts/1" for 127.0.0.1 at 2017-10-12 17:31:31 -0300
+Processing by ContactsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mContact Load (12.7ms)[0m  [1m[34mSELECT  "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 1.6ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2017-10-12 17:39:13 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ContactsController#index as */*
+  [1m[36mContact Load (0.5ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 1.3ms)
+
+
